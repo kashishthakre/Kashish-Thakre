@@ -1,0 +1,203 @@
+<html>
+<head>
+  <title>Prac9 Bootstrap</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Forts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Forts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visit us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+ 
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="data:image/jpeg;base64,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w=1200&h=1200&s=1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lotus Temple</h5>
+          <p>The Lotus Temple, located in Delhi, India, is a Bahá'í House of Worship that was dedicated in December 1986, costing $10 million</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.britannica.com/19/251919-050-D3E64798/konark-sun-temple-orissa-india-unesco-heritage-site.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sun Temple Odisa </h5>
+          <p>The present Sun Temple was probably built by King Narashimhadev I (1238-64) of the Ganga dynasty to celebrate his victory over the Muslims</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.pinimg.com/474x/c7/fa/cc/c7facc7d086ff177f0ed6d946c4c0e98.jpg">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Golden Temple , Amritsar</h5>
+          <p>The Golden Temple, also known as Harmandir Sahib, is a revered Sikh religious site in Amritsar, India, and is a central pilgrimage destination for Sikhs.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <div class="container my-5">
+    <h2 class="mb-4">FAQ Accordion</h2>
+
+    <div class="accordion" id="accordionExample">
+
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            How many Temples are their in india?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            India is a home to an estimate 2 millon temples.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Which is India's oldest temple?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+        Mudeshwari temple is oldest temple which have been built during the gupta empire between 4th and 5th centuries.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Which is the most beautiful temple in India?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Determining the "most beautiful" temple is subjective, but some of the most stunning and well-regarded temples in India include the Padmanabhaswamy Temple in Kerala, known for its intricate carvings and architectural grandeur. Other contenders for the title of most beautiful include the Meenakshi Temple in Madurai, with its vibrant colors and complex design, and the Hampi temples, which feature unique rock formations and ancient structures. 
+Key features of these temples that contribute to their beauty: 
+Padmanabhaswamy Temple:
+Known for its elaborate carvings, intricate architecture, and historical significance.
+Meenakshi Temple:
+Recognized for its vibrant colors, stunning gopurams (towers), and complex design.
+Hampi Temples:
+Unique for their rock formations, ancient structures, and historical context.
+Other notable temples:
+Additionally, temples like the Sundareshwar Temple in Andhra Pradesh, and the Shiva Temple in Mahabaleshwar, are also renowned for their beauty and architectural grandeur. 
+List of Hindu temples in India - Wikipedia
+* Shitla Mata Temple, Patna. * Shri Adinath Akhara. * Sita Kund. * Thawe Mandir. * Ugna Mahadev, Bhawanipur. * Viraat Ramayan Man. 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <!-- Your main content goes here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col-md-3 mb-3">
+          <h5>MySite</h5>
+          <p>Building modern and responsive websites with ease.</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-3 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-3 mb-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-3 mb-3">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-3">
+        <small>&copy; 2025 MySite. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
